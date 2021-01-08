@@ -1,0 +1,90 @@
+:root{
+    --white:#f71414;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.nav{
+    color:var(--white);
+    background-color:black;
+    display: flex;
+    flex-direction: column;
+   
+    
+    
+}
+.nav.left{
+    display: inline-block;
+    width: fit-content;
+    margin: auto;
+    
+}
+.nav.left img{
+    display: inline-block;
+    width: 1.7rem;
+    height: 2.5rem;
+    margin-top: 0.5rem;
+}
+.nav.left h1{
+    display: inline-block;
+    padding-left: 1rem;
+    margin-bottom:1rem ;
+}
+.nav.right {
+    width: fit-content;
+    margin: auto;
+}
+.nav.right ul {
+   display: flex;
+   flex-direction: column;
+   padding: 1rem;
+   list-style: none;
+   
+ 
+}
+.nav.right ul li {
+    padding: 0.8rem;
+    text-align: center;
+}
+.nav.right ul li a{
+    text-decoration: none;
+    list-style: none;
+    color: var(--white);
+   
+}
+a:active , a:hover{
+    border: 1px solid white;
+    transition: 0.5s;
+}
+.nav #bars {
+    font-size: 2.5rem;
+    margin: auto 0;
+  
+   
+} 
+.nav #bars {
+    color: var(--white);
+    border: 0px ;
+    background-color: black;
+    display: inline-block;
+    width: fit-content;
+    margin: auto;
+
+} 
+#menu {
+    box-sizing: border-box;
+}
+#menu ul{
+    box-sizing: border-box;
+    justify-content: center;
+    padding: 0rem;
+    
+}
+@media screen and (min-width: 768px){
+    .nav #bars {display: none;}
+    .nav{flex-direction: row;}
+    .nav.right ul{flex-direction: row; }
+
+}
